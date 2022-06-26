@@ -4,7 +4,7 @@ from dao.model.directors import Director
 from dao.model.movies import Movie
 
 class MovieDAO:
-    def __int__(self, session):
+    def __init__(self, session):
         self.session = session
 
     def get(self, mid=None, **kwargs):
