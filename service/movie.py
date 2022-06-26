@@ -2,7 +2,7 @@ from dao.movie import MovieDAO
 
 
 class MovieService:
-    def __int__(self, dao: MovieDAO):
+    def __init__(self, dao: MovieDAO):
         self.dao = dao
 
     def get_movies(self, mid=None, **kwargs):
