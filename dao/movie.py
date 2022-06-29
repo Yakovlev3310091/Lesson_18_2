@@ -17,7 +17,7 @@ class MovieDAO:
             for key, value in kwargs.items():
                 query = query.filter(eval(f"Movie.{key}") == int(value))
 
-            return query.all()
+        return query.all()
 
     def create(self, data):
         new_movie = Movie(**data)
